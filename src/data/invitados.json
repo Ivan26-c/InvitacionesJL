@@ -1,0 +1,37 @@
+[
+  {
+    "codigo": "4X1R6T",
+    "nombreMostrar": "Iván Quezada Girón",
+    "etiqueta": "Invitado Especial",
+    "pases": 1,
+    "plural": false
+  },
+  {
+    "codigo": "K9M4X2",
+    "nombreMostrar": "Familia Quezada Céspedes",
+    "etiqueta": "Familia Querida",
+    "pases": 4,
+    "plural": true
+  },
+  {
+    "codigo": "7T1B9Q",
+    "nombreMostrar": "Carlos Alberto Mendoza y Sra.",
+    "etiqueta": "Apreciados Amigos de la Familia",
+    "pases": 2,
+    "plural": true
+  },
+  {
+    "codigo": "R5W8D3",
+    "nombreMostrar": "María Elena Céspedes",
+    "etiqueta": "Invitada Especial",
+    "pases": 1,
+    "plural": false
+  },
+  {
+    "codigo": "2Z6N8P",
+    "nombreMostrar": "Familia Villegas Roa",
+    "etiqueta": "Invitados Especiales",
+    "pases": 3,
+    "plural": true
+  }
+]
