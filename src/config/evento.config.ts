@@ -8,7 +8,7 @@ export const eventoConfig = {
     iniciales: "JL",
     edad: 70,
     encabezado: "Celebremos su vida",
-    pensamiento: "Ven acompañados como a él le gustaba celebrar",
+    pensamiento: "Ven acompañanos como a él le gustaba celebrar",
     fotoPrincipal: "images/jose-luis-portada-panoramica.jpg",
     recortarSilueta: true,
   },
