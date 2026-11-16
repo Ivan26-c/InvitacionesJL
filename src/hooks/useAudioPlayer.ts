@@ -7,6 +7,7 @@ export function useAudioPlayer() {
   const [error, setError] = useState("");
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const userPausedRef = useRef(false);
+  const startingRef = useRef(false);
   const mounted = useRef(true);
 
   const ensureAudio = useCallback(() => {
@@ -35,10 +36,11 @@ export function useAudioPlayer() {
   }, []);
 
   const startMusic = useCallback(async (silent = false) => {
-    if (!eventoConfig.musica.archivoMp3) return false;
+    if (!eventoConfig.musica.archivoMp3 || startingRef.current) return false;
     if (!silent) setError("");
     const audio = ensureAudio();
     if (!audio.paused) return true;
+    startingRef.current = true;
     try {
       await audio.play();
       return true;
@@ -48,6 +50,8 @@ export function useAudioPlayer() {
         setError("No pudimos reproducir la canción. Inténtalo de nuevo.");
       }
       return false;
+    } finally {
+      startingRef.current = false;
     }
   }, [ensureAudio]);
 
@@ -66,27 +70,33 @@ export function useAudioPlayer() {
     mounted.current = true;
     if (!eventoConfig.musica.archivoMp3) return;
 
-    void startMusic(true);
+    const gestureEvents = ["pointerdown", "touchend", "click", "keydown"] as const;
+    const removeListeners = () => {
+      for (const type of gestureEvents) {
+        window.removeEventListener(type, handleFirstGesture, true);
+      }
+    };
 
     const handleFirstGesture = (event: Event) => {
       if (userPausedRef.current) return;
       const target = event.target as HTMLElement | null;
       if (target?.closest(".music-control")) return;
       void startMusic(true).then((started) => {
-        if (started) {
-          window.removeEventListener("click", handleFirstGesture, true);
-          window.removeEventListener("keydown", handleFirstGesture, true);
-        }
+        if (started) removeListeners();
       });
     };
 
-    window.addEventListener("click", handleFirstGesture, true);
-    window.addEventListener("keydown", handleFirstGesture, true);
+    for (const type of gestureEvents) {
+      window.addEventListener(type, handleFirstGesture, { capture: true, passive: true });
+    }
+
+    void startMusic(true).then((started) => {
+      if (started) removeListeners();
+    });
 
     return () => {
       mounted.current = false;
-      window.removeEventListener("click", handleFirstGesture, true);
-      window.removeEventListener("keydown", handleFirstGesture, true);
+      removeListeners();
       if (audioRef.current) {
         audioRef.current.pause();
         audioRef.current = null;

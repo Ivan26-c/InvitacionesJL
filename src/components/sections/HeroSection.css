@@ -16,9 +16,9 @@
 .cover-photo-plain { transition: transform 700ms cubic-bezier(.2,.7,.2,1); }
 .is-enlarged .cover-photo-plain { transform: scale(1.025); }
 .cover-shade { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, #211d1810, transparent 28%, #241c1818 57%, #211d1870); }
-.cover-lettering { position: absolute; top: 29%; left: 5%; width: 90%; display: flex; flex-direction: column; align-items: center; pointer-events: none; text-align: center; color: #000; text-shadow: 0 1px 14px rgba(255, 253, 248, 0.78); }
-.cover-date { margin: 0; color: #000; font: 600 clamp(26px, 2.7vw, 38px)/1.35 'Cormorant Garamond', Georgia, serif; letter-spacing: clamp(5px, .5vw, 7px); white-space: nowrap; }
-.cover-name-sticker, .cover-age-sticker { color: #000; }
+.cover-lettering { position: absolute; top: 29%; left: 5%; width: 90%; display: flex; flex-direction: column; align-items: center; pointer-events: none; text-align: center; color: #fff; text-shadow: 0 2px 18px rgba(34, 24, 16, 0.72), 0 1px 6px rgba(0, 0, 0, 0.45); }
+.cover-date { margin: 0; color: #fff; font: 600 clamp(26px, 2.7vw, 38px)/1.35 'Cormorant Garamond', Georgia, serif; letter-spacing: clamp(5px, .5vw, 7px); white-space: nowrap; }
+.cover-name-sticker, .cover-age-sticker { color: #fff; }
 .cover-name-sticker { margin-top: 12px; animation: lettering-drift 10s ease-in-out infinite; }
 .cover-name-sticker h1 { margin: 0; font: 400 clamp(72px, min(22vw, 16svh), 156px)/1 'Allura', cursive; letter-spacing: 0; white-space: nowrap; }
 .cover-small-caption { margin: 12px 0 0; font: 600 clamp(13px, 1.3vw, 18px)/1.55 'Plus Jakarta Sans', sans-serif; letter-spacing: clamp(2.5px, .3vw, 4px); text-transform: uppercase; }
