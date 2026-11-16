@@ -35,7 +35,8 @@ export const eventoConfig = {
     archivoMp3: "audio/musica.mp3",
   },
   rsvp: {
-    googleSheetsUrl: "",
+    googleSheetsUrl:
+      "https://script.google.com/macros/s/AKfycbyz7Dny6A6DHU1gqjCm6KAemBYq2QaBEuV3R62yV4WxVdUhB7l8_HETMVzimU-742PAcg/exec",
     fechaLimiteTexto: "Cuéntanos si podrás venir para preparar este día juntos.",
     maxPasesGenericos: 5,
   },
