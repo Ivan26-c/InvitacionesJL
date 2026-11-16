@@ -215,5 +215,12 @@
     "etiqueta": "Invitada Especial",
     "pases": 1,
     "plural": false
+  },
+  {
+    "codigo": "SYJC5C",
+    "nombreMostrar": "Quezada Girón",
+    "etiqueta": "Invitados Especiales",
+    "pases": 4,
+    "plural": true
   }
 ]
