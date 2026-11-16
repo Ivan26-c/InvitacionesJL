@@ -67,7 +67,7 @@ export function RsvpSection({ invitado }: { invitado: Invitado | null }) {
             <span className="event-weekday">{weekday}</span>
             <h3>{date}</h3>
             <p>
-              {year} <span>·</span> {lugar?.hora ?? "1:00 p. m."}
+              {year} <span>·</span> Hora: {lugar?.hora ?? "1:00 p. m."}
             </p>
           </div>
           {lugar && (

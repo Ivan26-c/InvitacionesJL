@@ -32,14 +32,14 @@ export const eventoConfig = {
     fotos: [] as FotoGaleria[],
   },
   musica: {
-    archivoMp3: "",
+    archivoMp3: "audio/musica.mp3",
   },
   rsvp: {
     googleSheetsUrl: "",
     fechaLimiteTexto: "Cuéntanos si podrás venir para preparar este día juntos.",
     maxPasesGenericos: 5,
   },
-  organizador: { pinAcceso: "2026", urlPublicaBase: "" },
+  organizador: { pinAcceso: "2026", urlPublicaBase: "https://ivan26-c.github.io/InvitacionesJL" },
   cierre: {
     fraseFinal: "Qué bonito seguir reuniéndonos por ti.",
     familiaFirma: "Familia Quezada",

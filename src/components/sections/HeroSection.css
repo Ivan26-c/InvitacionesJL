@@ -16,15 +16,15 @@
 .cover-photo-plain { transition: transform 700ms cubic-bezier(.2,.7,.2,1); }
 .is-enlarged .cover-photo-plain { transform: scale(1.025); }
 .cover-shade { position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, #211d1810, transparent 28%, #241c1818 57%, #211d1870); }
-.cover-lettering { position: absolute; top: 41%; left: 5%; width: 90%; display: flex; flex-direction: column; align-items: center; pointer-events: none; text-align: center; text-shadow: 0 2px 18px #34251b55; }
-.cover-date { margin: 0; color: white; font: 400 clamp(22px, 2.1vw, 30px)/1.4 'Cormorant Garamond', Georgia, serif; letter-spacing: clamp(5px, .5vw, 7px); white-space: nowrap; }
-.cover-name-sticker, .cover-age-sticker { color: #fff; }
-.cover-name-sticker { margin-top: 18px; animation: lettering-drift 10s ease-in-out infinite; }
-.cover-name-sticker h1 { margin: 0; font: 400 clamp(64px, min(21vw, 15svh), 145px)/1 'Allura', cursive; letter-spacing: 0; white-space: nowrap; }
-.cover-small-caption { margin: 12px 0 0; font: 400 clamp(9px, .8vw, 11px)/1.6 'Plus Jakarta Sans', sans-serif; letter-spacing: clamp(3px, .3vw, 4px); text-transform: uppercase; }
-.cover-age-sticker { display: flex; justify-content: center; align-items: baseline; gap: 12px; margin-top: 8px; animation: lettering-drift 11s ease-in-out -4s infinite; }
-.cover-age-number { font: 400 clamp(40px, 3.5vw, 50px)/.85 'Cormorant Garamond', Georgia, serif; }
-.cover-age-word { font: 400 12px/1.3 'Plus Jakarta Sans', sans-serif; letter-spacing: 5px; }
+.cover-lettering { position: absolute; top: 29%; left: 5%; width: 90%; display: flex; flex-direction: column; align-items: center; pointer-events: none; text-align: center; color: #000; text-shadow: 0 1px 14px rgba(255, 253, 248, 0.78); }
+.cover-date { margin: 0; color: #000; font: 600 clamp(26px, 2.7vw, 38px)/1.35 'Cormorant Garamond', Georgia, serif; letter-spacing: clamp(5px, .5vw, 7px); white-space: nowrap; }
+.cover-name-sticker, .cover-age-sticker { color: #000; }
+.cover-name-sticker { margin-top: 12px; animation: lettering-drift 10s ease-in-out infinite; }
+.cover-name-sticker h1 { margin: 0; font: 400 clamp(72px, min(22vw, 16svh), 156px)/1 'Allura', cursive; letter-spacing: 0; white-space: nowrap; }
+.cover-small-caption { margin: 12px 0 0; font: 600 clamp(13px, 1.3vw, 18px)/1.55 'Plus Jakarta Sans', sans-serif; letter-spacing: clamp(2.5px, .3vw, 4px); text-transform: uppercase; }
+.cover-age-sticker { display: flex; justify-content: center; align-items: baseline; gap: 14px; margin-top: 10px; animation: lettering-drift 11s ease-in-out -4s infinite; }
+.cover-age-number { font: 600 clamp(48px, 4.6vw, 68px)/.85 'Cormorant Garamond', Georgia, serif; }
+.cover-age-word { font: 600 clamp(14px, 1.3vw, 18px)/1.3 'Plus Jakarta Sans', sans-serif; letter-spacing: 5px; }
 .cover-scroll { position: absolute; z-index: 3; left: calc(50% - 26px); bottom: 70px; width: 52px; height: 52px; border: 1px solid #fffdf8a0; border-radius: 50%; color: white; background: #312b2410; display: grid; place-items: center; transition: background .2s; }
 .cover-scroll:hover { background: #312b2450; }
 .cover-scroll svg { animation: nudge 2s ease-in-out infinite; }
@@ -50,12 +50,13 @@
   .cover-glimmer { font-size: 19px; }
 }
 @media (max-height: 560px) {
-  .cover-lettering { top: 29%; }
+  .cover-lettering { top: 28%; }
   .cover-name-sticker { margin-top: 8px; }
-  .cover-name-sticker h1 { font-size: clamp(54px, 15svh, 84px); }
-  .cover-date { font-size: 18px; }
-  .cover-small-caption { margin-top: 6px; font-size: 8px; }
-  .cover-age-number { font-size: 32px; }
+  .cover-name-sticker h1 { font-size: clamp(58px, 16svh, 96px); }
+  .cover-date { font-size: 22px; }
+  .cover-small-caption { margin-top: 6px; font-size: 11px; }
+  .cover-age-number { font-size: 38px; }
+  .cover-age-word { font-size: 12px; }
   .cover-scroll { bottom: 35px; width: 42px; height: 42px; left: calc(50% - 21px); }
   .cover-paper-transition { height: 55px; }
 }

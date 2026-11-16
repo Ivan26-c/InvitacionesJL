@@ -1,37 +1,219 @@
 [
   {
-    "codigo": "4X1R6T",
-    "nombreMostrar": "Iván Quezada Girón",
-    "etiqueta": "Invitado Especial",
-    "pases": 1,
-    "plural": false
-  },
-  {
-    "codigo": "K9M4X2",
-    "nombreMostrar": "Familia Quezada Céspedes",
-    "etiqueta": "Familia Querida",
-    "pases": 4,
-    "plural": true
-  },
-  {
-    "codigo": "7T1B9Q",
-    "nombreMostrar": "Carlos Alberto Mendoza y Sra.",
-    "etiqueta": "Apreciados Amigos de la Familia",
+    "codigo": "EC7WRA",
+    "nombreMostrar": "Antonio Quezada y esposa",
+    "etiqueta": "Invitados Especiales",
     "pases": 2,
     "plural": true
   },
   {
-    "codigo": "R5W8D3",
-    "nombreMostrar": "María Elena Céspedes",
+    "codigo": "5KDE42",
+    "nombreMostrar": "Miguel Olivos y familia",
+    "etiqueta": "Invitados Especiales",
+    "pases": 4,
+    "plural": true
+  },
+  {
+    "codigo": "NCVQ7J",
+    "nombreMostrar": "Oscar Cruz y esposa",
+    "etiqueta": "Invitados Especiales",
+    "pases": 2,
+    "plural": true
+  },
+  {
+    "codigo": "2YSTHG",
+    "nombreMostrar": "Alejandrina Quezada",
     "etiqueta": "Invitada Especial",
     "pases": 1,
     "plural": false
   },
   {
-    "codigo": "2Z6N8P",
-    "nombreMostrar": "Familia Villegas Roa",
+    "codigo": "XAQJVA",
+    "nombreMostrar": "Percy Querevalu",
+    "etiqueta": "Invitado Especial",
+    "pases": 1,
+    "plural": false
+  },
+  {
+    "codigo": "UAUN6R",
+    "nombreMostrar": "Javier Querevalu",
+    "etiqueta": "Invitado Especial",
+    "pases": 1,
+    "plural": false
+  },
+  {
+    "codigo": "PDYW2F",
+    "nombreMostrar": "Gina Querevalu y familia",
     "etiqueta": "Invitados Especiales",
-    "pases": 3,
+    "pases": 4,
     "plural": true
+  },
+  {
+    "codigo": "W86YDH",
+    "nombreMostrar": "Margarita Quezada",
+    "etiqueta": "Invitada Especial",
+    "pases": 1,
+    "plural": false
+  },
+  {
+    "codigo": "7HQF9A",
+    "nombreMostrar": "Carlos Wong y familia",
+    "etiqueta": "Invitados Especiales",
+    "pases": 4,
+    "plural": true
+  },
+  {
+    "codigo": "PXW5BR",
+    "nombreMostrar": "Hugo Murillo y familia",
+    "etiqueta": "Invitados Especiales",
+    "pases": 4,
+    "plural": true
+  },
+  {
+    "codigo": "9P2GLR",
+    "nombreMostrar": "Azucena Quezada y hermana",
+    "etiqueta": "Invitadas Especiales",
+    "pases": 2,
+    "plural": true
+  },
+  {
+    "codigo": "EUZMQU",
+    "nombreMostrar": "Martha Quezada",
+    "etiqueta": "Invitada Especial",
+    "pases": 1,
+    "plural": false
+  },
+  {
+    "codigo": "UXE7AJ",
+    "nombreMostrar": "Rosa Girón",
+    "etiqueta": "Invitada Especial",
+    "pases": 1,
+    "plural": false
+  },
+  {
+    "codigo": "49KJJ7",
+    "nombreMostrar": "Dagoberto Jaramillo y familia",
+    "etiqueta": "Invitados Especiales",
+    "pases": 4,
+    "plural": true
+  },
+  {
+    "codigo": "BJ8WHJ",
+    "nombreMostrar": "Leydi Jaramillo y familia",
+    "etiqueta": "Invitados Especiales",
+    "pases": 4,
+    "plural": true
+  },
+  {
+    "codigo": "N9CJP8",
+    "nombreMostrar": "Néstor Jaramillo",
+    "etiqueta": "Invitado Especial",
+    "pases": 1,
+    "plural": false
+  },
+  {
+    "codigo": "FV58HJ",
+    "nombreMostrar": "Marisol Girón y familia",
+    "etiqueta": "Invitados Especiales",
+    "pases": 4,
+    "plural": true
+  },
+  {
+    "codigo": "WYHFMK",
+    "nombreMostrar": "Miguel Chorres y familia",
+    "etiqueta": "Invitados Especiales",
+    "pases": 4,
+    "plural": true
+  },
+  {
+    "codigo": "22UCBE",
+    "nombreMostrar": "Fernando Saavedra y familia",
+    "etiqueta": "Invitados Especiales",
+    "pases": 4,
+    "plural": true
+  },
+  {
+    "codigo": "HHWTFF",
+    "nombreMostrar": "Segundo Girón y familia",
+    "etiqueta": "Invitados Especiales",
+    "pases": 4,
+    "plural": true
+  },
+  {
+    "codigo": "GL354J",
+    "nombreMostrar": "Jorge Girón y familia",
+    "etiqueta": "Invitados Especiales",
+    "pases": 4,
+    "plural": true
+  },
+  {
+    "codigo": "KTZMS7",
+    "nombreMostrar": "Marisela Girón y familia",
+    "etiqueta": "Invitados Especiales",
+    "pases": 4,
+    "plural": true
+  },
+  {
+    "codigo": "R5VZTG",
+    "nombreMostrar": "Ruben Girón e hija",
+    "etiqueta": "Invitados Especiales",
+    "pases": 2,
+    "plural": true
+  },
+  {
+    "codigo": "F9UY9Y",
+    "nombreMostrar": "Luis Girón",
+    "etiqueta": "Invitado Especial",
+    "pases": 1,
+    "plural": false
+  },
+  {
+    "codigo": "GAF2S7",
+    "nombreMostrar": "Kevin Girón y familia",
+    "etiqueta": "Invitados Especiales",
+    "pases": 4,
+    "plural": true
+  },
+  {
+    "codigo": "CTBESM",
+    "nombreMostrar": "Mercedes Ramirez",
+    "etiqueta": "Invitada Especial",
+    "pases": 1,
+    "plural": false
+  },
+  {
+    "codigo": "GXKNQB",
+    "nombreMostrar": "Beneranda Santos",
+    "etiqueta": "Invitada Especial",
+    "pases": 1,
+    "plural": false
+  },
+  {
+    "codigo": "7FG58Y",
+    "nombreMostrar": "Eduardo Montalban",
+    "etiqueta": "Invitado Especial",
+    "pases": 1,
+    "plural": false
+  },
+  {
+    "codigo": "5632G9",
+    "nombreMostrar": "Jesús Mitma y esposa",
+    "etiqueta": "Invitados Especiales",
+    "pases": 2,
+    "plural": true
+  },
+  {
+    "codigo": "WCBEDE",
+    "nombreMostrar": "Yoly Nole",
+    "etiqueta": "Invitada Especial",
+    "pases": 1,
+    "plural": false
+  },
+  {
+    "codigo": "GMREJQ",
+    "nombreMostrar": "Clara Rivas",
+    "etiqueta": "Invitada Especial",
+    "pases": 1,
+    "plural": false
   }
 ]
