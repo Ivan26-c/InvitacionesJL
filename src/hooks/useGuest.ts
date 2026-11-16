@@ -9,7 +9,11 @@ export function useGuest() {
   const { codigo } = useParams<{ codigo?: string }>();
 
   const invitado = useMemo<Invitado | null>(() => {
-    const limpio = (codigo || "").trim().toUpperCase();
+    const desdeQuery =
+      typeof window !== "undefined"
+        ? new URLSearchParams(window.location.search).get("i") || ""
+        : "";
+    const limpio = (codigo || desdeQuery).trim().toUpperCase();
     if (!limpio) return null;
 
     return (

@@ -33,7 +33,7 @@ export function AdminLinksPage() {
     return `${origin}${pathname.replace(/\/+$/, "")}`;
   }, []);
 
-  const construirLink = (codigo: string) => `${baseUrl}/#/${codigo}`;
+  const construirLink = (codigo: string) => `${baseUrl}/?i=${codigo}`;
 
   const construirTextoWhatsApp = (inv: Invitado) => {
     const saludo = inv.plural
