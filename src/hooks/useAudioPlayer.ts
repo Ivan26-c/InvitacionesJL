@@ -78,7 +78,7 @@ export function useAudioPlayer() {
     const handleFirstGesture = (event: Event) => {
       if (userPausedRef.current) return;
       const target = event.target as HTMLElement | null;
-      if (target?.closest(".music-control")) return;
+      if (target?.closest(".music-control, .welcome-open-button")) return;
       void startMusic(true).then((started) => {
         if (started) removeListeners();
       });
@@ -87,10 +87,6 @@ export function useAudioPlayer() {
     for (const type of gestureEvents) {
       window.addEventListener(type, handleFirstGesture, { capture: true, passive: true });
     }
-
-    void startMusic(true).then((started) => {
-      if (started) removeListeners();
-    });
 
     return () => {
       mounted.current = false;
@@ -102,5 +98,5 @@ export function useAudioPlayer() {
     };
   }, [ensureAudio, startMusic]);
 
-  return { isPlaying, toggleMusic, error };
+  return { isPlaying, toggleMusic, startMusic, error };
 }
