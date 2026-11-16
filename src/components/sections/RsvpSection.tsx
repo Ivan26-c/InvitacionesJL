@@ -245,12 +245,6 @@ export function RsvpSection({ invitado }: { invitado: Invitado | null }) {
                 )}
               </button>
             </div>
-
-            {!available && (
-              <p className="form-note">
-                Por ahora, confirma tu asistencia directamente con la familia.
-              </p>
-            )}
           </form>
         )}
       </dialog>

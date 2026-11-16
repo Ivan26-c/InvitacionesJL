@@ -7,7 +7,6 @@ export function useAudioPlayer() {
   const [error, setError] = useState("");
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const userPausedRef = useRef(false);
-  const startingRef = useRef(false);
   const mounted = useRef(true);
 
   const ensureAudio = useCallback(() => {
@@ -36,11 +35,10 @@ export function useAudioPlayer() {
   }, []);
 
   const startMusic = useCallback(async (silent = false) => {
-    if (!eventoConfig.musica.archivoMp3 || startingRef.current) return false;
+    if (!eventoConfig.musica.archivoMp3) return false;
     if (!silent) setError("");
     const audio = ensureAudio();
     if (!audio.paused) return true;
-    startingRef.current = true;
     try {
       await audio.play();
       return true;
@@ -50,8 +48,6 @@ export function useAudioPlayer() {
         setError("No pudimos reproducir la canción. Inténtalo de nuevo.");
       }
       return false;
-    } finally {
-      startingRef.current = false;
     }
   }, [ensureAudio]);
 
@@ -70,7 +66,9 @@ export function useAudioPlayer() {
     mounted.current = true;
     if (!eventoConfig.musica.archivoMp3) return;
 
-    const gestureEvents = ["pointerdown", "touchend", "click", "keydown"] as const;
+    ensureAudio();
+
+    const gestureEvents = ["touchend", "click", "keydown"] as const;
     const removeListeners = () => {
       for (const type of gestureEvents) {
         window.removeEventListener(type, handleFirstGesture, true);
@@ -102,7 +100,7 @@ export function useAudioPlayer() {
         audioRef.current = null;
       }
     };
-  }, [startMusic]);
+  }, [ensureAudio, startMusic]);
 
   return { isPlaying, toggleMusic, error };
 }
